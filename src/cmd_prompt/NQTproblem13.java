@@ -1,0 +1,26 @@
+package cmd_prompt;
+import java.util.Scanner;
+public class NQTproblem13 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Scanner sc = new Scanner(System.in);
+int size = sc.nextInt();
+int arr[] = new int[size];
+for(int i= 0;i<size;i++) {
+	arr[i] = sc.nextInt();
+	
+}
+for(int i =0;i<size;i++) {
+	int result = 0;
+	for(int j = i;j<size;j++) {
+		if(arr[i] == arr[j]) {
+			result++;
+		}
+	}
+	if(result >= 2)
+	System.out.println(arr[i]);
+}
+	}
+
+}
