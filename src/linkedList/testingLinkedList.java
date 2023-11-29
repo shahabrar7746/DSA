@@ -5,6 +5,8 @@ public class testingLinkedList {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		LL ll = new LL();
+
+		
 		
 		
 	  
