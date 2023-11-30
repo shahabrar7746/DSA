@@ -59,11 +59,28 @@ public boolean isEmpty() {
 
 }
 public String keys() {
-   return Arrays.toString(key);
-
+    String a = "";
+    String t = "";
+    for(int i =0;i<val.length;i++){
+        if(key[i] != null){
+           a = a + "\n " + t.valueOf(key[i]); 
+    }
+}
+return a;
 }
 public String values() {
-   return Arrays.toString(val);
+    String a = "";
+    String t = "";
+    for(int i =0;i<val.length;i++){
+        if(val[i] != null){
+           a = a + "\n " + t.valueOf(val[i]); 
+    }
+}
+return a;
+
+}
+public int size() {
+   return size;
 
 }
 public String toString(){
