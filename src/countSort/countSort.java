@@ -2,6 +2,7 @@ package countSort;
 
 import java.sql.Array;
 import java.util.Arrays;
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.OptionalInt;
 
@@ -49,12 +50,14 @@ public class countSort {
               pointer++;
             }
          }
+      
        }
 
     public static void main(String[] args) {
         int arr[] = {3,4,1,3,2,5,243,8,3,90,43,23,23};
         sortByMap(arr);
         System.out.println(Arrays.toString(arr));
+       
     }
     
 }
