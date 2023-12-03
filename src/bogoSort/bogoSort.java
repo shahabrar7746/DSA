@@ -18,19 +18,18 @@ public class bogoSort {
              return ran.nextInt(length);
          }
          static void bogoSort(int arr[]){
-           int i = 1;
+          
           
             while (!isSorted(arr)){
-               if(i >= arr.length){
-                i =0;
-               }
+              
            
-                int r1 = i;
-                int r2 = randomInt(arr.length);
-                if(r1 != r2){
-                    int temp = arr[r1];
-                    arr[r1] = arr[r2];
-                    arr[r2] = temp;
+                int random1 = randomInt(arr.length);
+
+                int random2 = randomInt(arr.length);
+                if(random1 != random2){
+                    int temp = arr[random1];
+                    arr[random1] = arr[random2];
+                    arr[random2] = temp;
                 }
             }
 
