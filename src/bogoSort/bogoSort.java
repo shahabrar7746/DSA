@@ -19,23 +19,27 @@ public class bogoSort {
          }
          static void bogoSort(int arr[]){
           
-          
+          int i = 1;
+          int c = 1;
             while (!isSorted(arr)){
               
-           
-                int random1 = randomInt(arr.length);
+           System.out.println(c++);
+                int random1 = randomInt(i);
 
-                int random2 = randomInt(arr.length);
-                if(random1 != random2){
+                if(i >= arr.length){
+                    i = 1;
+                }
+                if(random1 != i){
                     int temp = arr[random1];
-                    arr[random1] = arr[random2];
-                    arr[random2] = temp;
+                    arr[random1] = arr[i];
+                    arr[i] = temp;
+                    i++;
                 }
             }
 
          }
      public static void main(String[] args) {
-        int arr[] = {4,3,2,1,-824,3,2,1};
+        int arr[] = {4,3,2,1,-824,45,4,54,5,40,25,-1,34,24,91450,1,3251,5424};
         bogoSort(arr);
         System.out.println(Arrays.toString(arr));
      }
