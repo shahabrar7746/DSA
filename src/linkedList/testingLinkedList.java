@@ -19,14 +19,7 @@ public class testingLinkedList {
 		
 	  
 	  
-	  ll.insert(1);
-	  ll.insert(2);
-	  ll.insert(3);
-	  ll.insert(4);
-	  ll.insert(5);
-	  ll.sort();
-	  ll.insert(6);
-	  ll.pairwiseSwap();
+	 
 	  
 	   
 	 
