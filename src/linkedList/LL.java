@@ -113,9 +113,9 @@ public class LL {
     	 
         Node s = head;
         Node f = head.next;
-        head = f;        Node prev = s
-        		;
-        while(f != null && f.next != null ){
+        head = f;        Node prev = s;
+        head = head.next;		
+        while(f != null ){
 
       //Swap
         	  
@@ -125,6 +125,9 @@ public class LL {
      
   
    prev = s;
+   if(s.next == null){
+    break;
+   }
       s = s.next;
       f = s.next;
       if(f != null) {

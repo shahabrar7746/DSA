@@ -1,10 +1,18 @@
 package linkedList;
 
 public class testingLinkedList {
+	
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		LL ll = new LL();
+		int arr[] = {1,2,2,4,5,6,7,8};
+		for(int i =0;i< arr.length;i++){
+             ll.insert(arr[i]);
+		}
+	
+
+		ll.pairwiseSwap();
      
 
 		
